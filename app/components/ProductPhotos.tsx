@@ -18,6 +18,7 @@ export default function ProductPhotos() {
   className="w-full rounded-2xl shadow-lg"
 />
 
+
           <p className="text-center text-gray-600 mt-3 text-sm">
             프로토타입 기반 비염 자가진단 키트 (예시 이미지)
           </p>
