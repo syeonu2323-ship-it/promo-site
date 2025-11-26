@@ -1,6 +1,8 @@
 "use client";
 
 export default function ProductPhotos() {
+  console.log("📸 ProductPhotos 렌더됨!");
+
   return (
     <section className="py-20 bg-gray-50 text-gray-900 px-6">
       <div className="max-w-5xl mx-auto">
