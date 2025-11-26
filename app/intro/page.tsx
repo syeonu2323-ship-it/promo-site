@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ProductPhotos from "@/components/ProductPhotos";
 
 export default function Intro() {
   const [show, setShow] = useState(false);
@@ -35,7 +36,7 @@ export default function Intro() {
           실제 판독하러 가기 →
         </a>
       </div>
-
+      <ProductPhotos />  
     </main>
   );
 }
