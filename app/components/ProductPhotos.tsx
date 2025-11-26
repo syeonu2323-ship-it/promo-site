@@ -12,11 +12,12 @@ export default function ProductPhotos() {
 
         {/* 메인 이미지 하나 크게 */}
         <div className="mb-12">
-          <img
-            src="/productphotos/realkit.png"
-            alt="비염 진단 키트"
-            className="w-full rounded-2xl shadow-lg"
-          />
+          <img 
+  src="/productphotos/realkit.png"
+  alt="비염 진단 키트"
+  className="w-full rounded-2xl shadow-lg"
+/>
+
           <p className="text-center text-gray-600 mt-3 text-sm">
             프로토타입 기반 비염 자가진단 키트 (예시 이미지)
           </p>
