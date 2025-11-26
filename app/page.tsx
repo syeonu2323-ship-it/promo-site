@@ -5,15 +5,13 @@ export default function Home() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShow(true);
-    }, 200);
+    const timer = setTimeout(() => setShow(true), 200);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-50 to-white text-gray-900 px-6">
-
+      
       {/* 애니메이션 문구 */}
       <h1
         className={`
@@ -26,7 +24,9 @@ export default function Home() {
 
       {/* 설명문구 */}
       <p className="text-base md:text-lg text-gray-600 max-w-xl text-center mb-8">
-       ECP-MPO 기반 듀얼 바이오마커 진단 솔루션으로 알레르기성 비염과 세균성 비염을 구분하는 혁신적 자가진단 키트
+        ECP-MPO 기반 듀얼 바이오마커 진단 솔루션으로 
+        알레르기성 비염과 세균성 비염을 구분하는 혁신적 자가진단 키트
+      </p>
 
       {/* 버튼 */}
       <div className="flex gap-4">
