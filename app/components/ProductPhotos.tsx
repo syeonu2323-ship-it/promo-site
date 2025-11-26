@@ -23,20 +23,6 @@ export default function ProductPhotos() {
           </p>
         </div>
 
-        {/* 서브 이미지 두 개 가로 배치 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <img
-            src="/images/mockup1.jpg"
-            alt="키트 사용 예시 1"
-            className="w-full rounded-xl shadow-md"
-          />
-          <img
-            src="/images/mockup2.jpg"
-            alt="키트 사용 예시 2"
-            className="w-full rounded-xl shadow-md"
-          />
-        </div>
-
         {/* 설명 텍스트 */}
         <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
           우리의 진단 키트는 <strong>“간단한 사용법 · 빠른 판독 · 병인 기반 구분”</strong>을 목표로 설계되었습니다.
