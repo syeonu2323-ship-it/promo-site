@@ -1,65 +1,51 @@
-import Image from "next/image";
+"use client";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-50 to-white text-gray-900 px-6">
+      {/* 콧속탐정단 */}
+      <div className="mb-10 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-3">
+          ✨ DualCHeck Rhinitis ✨
+        </h1>
+        <p className="text-base md:text-lg text-gray-600 max-w-xl mx-auto">
+           ECP-MPO 기반 듀얼 바이오마커 진단 솔루션으로 
+           알레르기성 비염과 세균성 비염을 구분하는 혁신적 자가진단 키트 
+        </p>
+      </div>
+
+      {/* 메인 홍보 박스 */}
+      <section className="w-full max-w-3xl bg-white shadow-xl rounded-2xl p-6 md:p-8 border border-gray-100">
+        <h2 className="text-2xl font-semibold mb-4 text-center">
+          🩺 이런 사람에게 딱이에요
+        </h2>
+        <ul className="space-y-2 text-gray-700 mb-6 text-sm md:text-base">
+          <li>• 비염 증상이 반복되는데, 병원 가기 전에 상태를 알고 싶은 사람</li>
+          <li>• 자가진단키트 결과가 애매해서 헷갈렸던 사람</li>
+          <li>• 가족/친구/환자 등 여러 사람의 검사 결과를 한 곳에서 관리하고 싶은 사람</li>
+        </ul>
+
+        {/* CTA 버튼들 */}
+        <div className="flex flex-col md:flex-row gap-3 justify-center">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/analyze"
+            className="text-center bg-blue-600 text-white px-6 py-3 rounded-xl text-sm md:text-base font-medium hover:bg-blue-700 transition"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            🔍 키트 결과 판독하러 가기
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/about"
+            className="text-center border border-gray-300 px-6 py-3 rounded-xl text-sm md:text-base font-medium hover:bg-gray-50 transition"
           >
-            Documentation
+            ℹ️ 서비스 소개 더 보기
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* 푸터 비슷한 문구 */}
+      <p className="mt-6 text-xs md:text-sm text-gray-400">
+        * 실제 기능과 이름은 나중에 자유롭게 바꿀 수 있어요 :)
+      </p>
+    </main>
   );
 }
