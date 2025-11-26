@@ -13,7 +13,7 @@ export default function ProductPhotos() {
         {/* 메인 이미지 하나 크게 */}
         <div className="mb-12">
           <img
-            src="/images/키트 실제 모습.png"
+            src="/producphotos/키트 실제 모습.png"
             alt="비염 진단 키트"
             className="w-full rounded-2xl shadow-lg"
           />
