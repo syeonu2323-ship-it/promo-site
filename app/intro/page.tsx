@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ProductPhotos from "@/components/ProductPhotos";
+import ProductPhotos from "../../components/ProductPhotos";
 
 export default function Intro() {
   const [show, setShow] = useState(false);
