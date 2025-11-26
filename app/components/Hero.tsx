@@ -28,12 +28,13 @@ export default function Hero() {
         알레르기성 비염과 세균성 비염을 빠르고 정확하게 구분하세요.
       </p>
 
-      <a
-        href="#problem"
-        className="mt-10 bg-blue-600 text-white px-7 py-3 rounded-xl font-medium hover:bg-blue-700 transition"
-      >
-        더 알아보기 ↓
-      </a>
+     <a
+  href="/about"
+  className="mt-10 bg-blue-600 text-white px-7 py-3 rounded-xl font-medium hover:bg-blue-700 transition"
+>
+  더 알아보기 →
+</a>
+
     </section>
   );
 }
