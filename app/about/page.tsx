@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ProductPhotos from "../components/ProductPhotos";
+
 
 export default function About() {
   const [show, setShow] = useState(false);
@@ -89,6 +91,21 @@ export default function About() {
             병인 기반 분석이 가능하다는 차별점이 있습니다.
           </p>
         </section>
+{/* 🔽 제품 이미지 섹션 시작 */}
+<section className="mt-20">
+  <h2 className="text-2xl font-bold mb-6 text-center">제품 이미지 미리보기</h2>
+
+  <img
+    src="/productphotos/dualcheck-box.png"   // ← 형 파일 이름에 맞게 바꿔줘!
+    alt="DualCheck Rhinitis Box"
+    className="w-full max-w-md mx-auto rounded-xl shadow-xl"
+  />
+
+  <p className="text-center text-gray-600 mt-4">
+    DualCheck Rhinitis™ 자가진단 키트 (시제품 렌더링 이미지)
+  </p>
+</section>
+{/* 🔼 제품 이미지 섹션 끝 */}
 
         {/* CTA */}
         <div className="text-center">
