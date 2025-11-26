@@ -13,7 +13,7 @@ export default function ProductPhotos() {
         {/* 메인 이미지 하나 크게 */}
         <div className="mb-12">
           <img 
-  src="/productphotos/realkit.png"
+  src="/productphotos/Gemini_Generated_Image_b35fmjb35fmjb35f.png"
   alt="비염 진단 키트"
   className="w-full rounded-2xl shadow-lg"
 />
