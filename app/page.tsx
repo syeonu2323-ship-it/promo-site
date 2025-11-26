@@ -31,11 +31,12 @@ export default function Home() {
       {/* 버튼 */}
       <div className="flex gap-4">
         <a
-          href="/analyze"
-          className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition"
-        >
-          바로 시작하기
-        </a>
+  href="/intro"
+  className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition"
+>
+  바로 시작하기 →
+</a>
+
       </div>
 
     </main>
